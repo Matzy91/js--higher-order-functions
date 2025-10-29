@@ -2,6 +2,10 @@ import { personArray, emojiArray } from "./data.js";
 
 export function forLoopCountToFive() {
   const result = [];
+
+  for (let i = 1; i <=5; i++){
+    result.push(i);
+  }
   return result;
 }
 
@@ -9,17 +13,33 @@ export function whileEvenNumbersUpToTen() {
   // arrayen ska bara innehålla jämna tal
   const result = [];
   let evenCandidate = 0;
+
+  while ( evenCandidate <= 10){
+    if(evenCandidate % 2 === 0){
+      result.push(evenCandidate)
+    }
+    evenCandidate++;
+    }
   return result;
 }
 
 export function doWhileAtLeastOnce() {
   const result = [];
   let doIdx = 0;
+
+  do{
+    result.push(doIdx)
+    doIdx++;
+  }
+  while (doIdx === 0 )
   return result;
 }
 
 export function getNamesFromPersonArrayUsingForOf() {
   const result = [];
+  for (const names of personArray){
+    result.push(names.name);
+  }
   return result;
 }
 

@@ -13,5 +13,8 @@
   "type": "module",
   "devDependencies": {
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "vite": "^7.1.12"
   }
 }
